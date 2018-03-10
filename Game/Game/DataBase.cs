@@ -5,10 +5,10 @@ namespace Game
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
-    public partial class Model1 : DbContext
+    public partial class DataBase : DbContext
     {
-        public Model1()
-            : base("name=Model1")
+        public DataBase()
+            : base("name=DataBase")
         {
         }
 
@@ -111,6 +111,10 @@ namespace Game
 
             modelBuilder.Entity<Players>()
                 .Property(e => e.nick)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Players>()
+                .Property(e => e.saltText)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Players>()

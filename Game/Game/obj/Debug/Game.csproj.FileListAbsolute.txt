@@ -38,3 +38,27 @@ C:\Users\Mietek\Source\Repos\ProjektBd\Game\Game\obj\Debug\MainWindow.baml
 C:\Users\Mietek\Source\Repos\ProjektBd\Game\Game\obj\Debug\Game.g.resources
 C:\Users\Mietek\Source\Repos\ProjektBd\Game\Game\obj\Debug\Game.Properties.Resources.resources
 C:\Users\Mietek\Source\Repos\ProjektBd\Game\Game\obj\Debug\Game.csproj.GenerateResource.Cache
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\bin\Debug\Game.exe.config
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\bin\Debug\Game.exe
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\bin\Debug\Game.pdb
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\bin\Debug\EntityFramework.dll
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\bin\Debug\EntityFramework.SqlServer.dll
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\bin\Debug\EntityFramework.xml
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\bin\Debug\EntityFramework.SqlServer.xml
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\Game.csprojResolveAssemblyReference.cache
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\App_Window.g.cs
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\MainWindow.g.cs
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\App.g.cs
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\Game_MarkupCompile.cache
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\Game_MarkupCompile.lref
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\App_Window.baml
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\MainWindow.baml
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\Game.g.resources
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\Game.Properties.Resources.resources
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\Game.csproj.GenerateResource.cache
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\Game.csproj.CopyComplete
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\Game.exe
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\Game.pdb
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\RegistrationWindow.g.cs
+J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\RegistrationWindow.baml

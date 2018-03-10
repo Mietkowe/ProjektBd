@@ -26,68 +26,71 @@ namespace Game
         public MainWindow()
         {
             InitializeComponent();
-            using (var db = new Model1())
+            using (var db = new DataBase())
             {
-                if (db.Database.Exists())
+                try
                 {
-                    //Console.WriteLine("daj nowa anzwe");
-                    //var name = Console.ReadLine();
-                    //DateTime a = DateTime.Now;
-                    //var k = new Table_1 { ID = 4, Name = "Mietek", Date = a };
-                    //db.Table_1.Add(k);
-                    //db.SaveChanges();
-                    try {
-                    
-                     //   db.Table_1.Load();
-                     //   ExampleDatagrid.ItemsSource = db.Table_1.Local;
-                    }
-                    catch(Exception e)
+                    if (!db.Database.Exists())
                     {
-                        string a = e.Message;
-                        
+                        MessageBox.Show("Baza nie istnieje!");
                     }
                 }
+                catch (Exception e)
+                {
+                    MessageBox.Show("WYJĄTKIEM W TWARZ!\n" + e.Message);
+                }
+
             }
-        }
-
-        private void SaveButton_Click(object sender, RoutedEventArgs e)
-        {
 
         }
 
 
-        private void pnlMainGrid_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-            MessageBox.Show("You clicked me at " + e.GetPosition(this).ToString());
-          //  kek1.TextWrapping = TextWrapping.Wrap;
-        }
 
         private void Login_Button_Click(object sender, RoutedEventArgs e)
         {
-            using (var db = new Model1())
+            using (var db = new DataBase())
             {
-                var user = db.Players.SingleOrDefault(u => u.nick == User_name.Text);
+                //var user = (from players in db.Players
+                //            where players.nick == User_name.Text
+                //            select players).FirstOrDefault();
+
+                var user = db.Players.SingleOrDefault(u => u.nick == User_nameTextBox.Text);
+
+
                 if (user == null)
                 {
                     MessageBox.Show("Podany użytkownik nie istnieje!", "Uwaga!", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 else
                 {
-                    string a = Password.Password;
-                    if (a != "")
+                    string writtenPassword = PasswordPasswordBox.Password;
+                    string salt = user.saltText;
+                    if (HashManager.isPasswordValid(salt, user.passwordHash, writtenPassword))
                     {
-                        var password = db.Players.Single(u => u.playerID == 1);
-                        if (password == null)
-                        {
-                            MessageBox.Show("Podane hasło jest nieprawidłowe!", "Uwaga!", MessageBoxButton.OK, MessageBoxImage.Error);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Udało ci się zalogować", "Uwaga!", MessageBoxButton.OK, MessageBoxImage.Information);
-                        }
+                        MessageBox.Show("LOGOWANKO!");
                     }
+                    else
+                    {
+                        MessageBox.Show("Błędne hasło");
+                    }
+
                 }
             }
+        }
+
+        private void PasswordPasswordBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Login_Button_Click(null, null);
+            }
+        }
+
+        private void Register_Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            new RegistrationWindow().ShowDialog();
+            this.Show();
         }
     }
 

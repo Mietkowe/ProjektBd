@@ -34,6 +34,12 @@ namespace Game
 
         public int playerLevel { get; set; }
 
+        [MaxLength(255)]
+        public byte[] passwordHash { get; set; }
+
+        [StringLength(50)]
+        public string saltText { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<owns> owns { get; set; }
 
