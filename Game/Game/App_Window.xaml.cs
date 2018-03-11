@@ -22,6 +22,20 @@ namespace Game
         public App_Window()
         {
             InitializeComponent();
+            using (var db = new Model1())
+            {
+                if (db.Database.Exists())
+                {
+                    try
+                    {
+                        dbGrid.ItemsSource = db.Games;
+                    }
+                    catch (Exception e)
+                    {
+                        string a = e.Message;
+
+                    }
+                }
+            }
         }
     }
-}

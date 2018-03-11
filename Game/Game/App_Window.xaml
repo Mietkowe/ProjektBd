@@ -25,7 +25,11 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Gry" />
-            <TabItem Header="Rankingi" />
+            <TabItem Header="Rankingi">
+                <Grid Margin="10">
+                    <DataGrid Name="dbGrid"></DataGrid>
+                </Grid>
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>
