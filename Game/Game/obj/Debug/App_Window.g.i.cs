@@ -80,6 +80,12 @@ namespace Game {
             {
             case 1:
             this.dbGrid = ((System.Windows.Controls.DataGrid)(target));
+            
+            #line 30 "..\..\App_Window.xaml"
+            this.dbGrid.KeyDown += new System.Windows.Input.KeyEventHandler(this.dbGrid_KeyDown);
+            
+            #line default
+            #line hidden
             return;
             }
             this._contentLoaded = true;

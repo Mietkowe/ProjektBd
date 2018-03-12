@@ -41,6 +41,11 @@ namespace Game
                 }
             }
         }
+
+        private void dbGrid_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key = enter)
+        }
     }
 
 
