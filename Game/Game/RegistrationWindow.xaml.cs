@@ -41,13 +41,23 @@ namespace Game
             {
                 var newPlayer = new Players();
                 newPlayer.nick = NickTextBox.Text;
-                newPlayer.age = Convert.ToByte(AgeTextBox.Text);
+
+                try
+                {
+                    newPlayer.age = Convert.ToByte(AgeTextBox.Text);
+                }
+                catch
+                {
+                    MessageBox.Show("Wiek musi być liczbą!");
+                    return;
+                }
+                    
 
                 using (var db = new DataBase())
                 {
                     var groupID = (from item in db.PlayerGroups
-                                  where item.name == GroupComboBox.SelectedItem.ToString()
-                                  select item.groupID).FirstOrDefault();
+                                    where item.name == GroupComboBox.SelectedItem.ToString()
+                                    select item.groupID).FirstOrDefault();
 
                     newPlayer.groupID = groupID;
                 }
@@ -64,6 +74,7 @@ namespace Game
                     db.SaveChanges();
                 }
                 this.Close();
+
             }
         }
 
@@ -75,7 +86,7 @@ namespace Game
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }

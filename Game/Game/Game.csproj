@@ -72,12 +72,21 @@
     <Compile Include="App_Window.xaml.cs">
       <DependentUpon>App_Window.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ChangeAccountPropertiesWindow.xaml.cs">
+      <DependentUpon>ChangeAccountPropertiesWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DataBase.cs" />
     <Compile Include="Games.cs" />
     <Compile Include="gameTypes.cs" />
     <Compile Include="HashManager.cs" />
     <Compile Include="Levels.cs" />
+    <Compile Include="MainActivityWindow.xaml.cs">
+      <DependentUpon>MainActivityWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="owns.cs" />
+    <Compile Include="PasswordChangeWindow.xaml.cs">
+      <DependentUpon>PasswordChangeWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PlayerGroups.cs" />
     <Compile Include="Players.cs" />
     <Compile Include="RegistrationWindow.xaml.cs">
@@ -89,6 +98,14 @@
     <Compile Include="Table_1.cs" />
     <Compile Include="unlockedAchievements.cs" />
     <Page Include="App_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChangeAccountPropertiesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainActivityWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -105,6 +122,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PasswordChangeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RegistrationWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

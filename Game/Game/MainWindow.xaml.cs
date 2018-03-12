@@ -67,7 +67,8 @@ namespace Game
                     string salt = user.saltText;
                     if (HashManager.isPasswordValid(salt, user.passwordHash, writtenPassword))
                     {
-                        MessageBox.Show("LOGOWANKO!");
+                        new MainActivityWindow(user.playerID).Show();
+                        this.Close();
                     }
                     else
                     {

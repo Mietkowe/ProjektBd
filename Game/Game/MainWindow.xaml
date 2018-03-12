@@ -21,6 +21,7 @@
                 <Button Name="Login_Button" Width="80" Margin="0, 0, 15, 0" Click="Login_Button_Click">Zaloguj się</Button>
                 <Button Name="Register_Button" Margin="15, 0, 0, 0" Width="80" Click="Register_Button_Click">Zarejestruj się</Button>
             </StackPanel>
+
         </StackPanel>
 
     </Grid>
