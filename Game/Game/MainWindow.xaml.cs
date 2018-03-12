@@ -38,7 +38,6 @@ namespace Game
                     //db.SaveChanges();
                     try {
                     
-                     //   db.Table_1.Load();
                      //   ExampleDatagrid.ItemsSource = db.Table_1.Local;
                     }
                     catch(Exception e)
@@ -84,6 +83,8 @@ namespace Game
                         else
                         {
                             MessageBox.Show("Udało ci się zalogować", "Uwaga!", MessageBoxButton.OK, MessageBoxImage.Information);
+                            new App_Window().Show();
+                            this.Close();
                         }
                     }
                 }

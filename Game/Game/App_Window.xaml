@@ -27,7 +27,12 @@
             <TabItem Header="Gry" />
             <TabItem Header="Rankingi">
                 <Grid Margin="10">
-                    <DataGrid Name="dbGrid"></DataGrid>
+                    <DataGrid Name="dbGrid" AutoGenerateColumns="False">
+                        <DataGrid.Columns>
+                        <DataGridTextColumn Header="Name" Binding="{Binding name}" />
+                        <DataGridTextColumn Header="Release Date" Binding="{Binding releaseDate}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
                 </Grid>
             </TabItem>
         </TabControl>

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.Entity;
 
 namespace Game
 {
@@ -28,7 +29,9 @@ namespace Game
                 {
                     try
                     {
-                        dbGrid.ItemsSource = db.Games;
+                       db.Games.Load();
+                       dbGrid.ItemsSource = db.Games.Local;
+                       var a = dbGrid.CurrentCell.ToString();
                     }
                     catch (Exception e)
                     {
@@ -39,3 +42,6 @@ namespace Game
             }
         }
     }
+
+
+}
