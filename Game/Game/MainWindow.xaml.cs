@@ -26,7 +26,7 @@ namespace Game
         public MainWindow()
         {
             InitializeComponent();
-            using (var db = new Model1())
+            using (var db = new GameContext())
             {
                 if (db.Database.Exists())
                 {
@@ -63,7 +63,7 @@ namespace Game
 
         private void Login_Button_Click(object sender, RoutedEventArgs e)
         {
-            using (var db = new Model1())
+            using (var db = new GameContext())
             {
                 var user = db.Players.SingleOrDefault(u => u.nick == User_name.Text);
                 if (user == null)

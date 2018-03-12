@@ -27,11 +27,18 @@
             <TabItem Header="Gry" />
             <TabItem Header="Rankingi">
                 <Grid Margin="10">
-                    <DataGrid Name="dbGrid" AutoGenerateColumns="False" KeyDown="dbGrid_KeyDown">
-                        <DataGrid.Columns>
-                        <DataGridTextColumn Header="Name" Binding="{Binding name}" />
-                        <DataGridTextColumn Header="Release Date" Binding="{Binding releaseDate}" />
-                        </DataGrid.Columns>
+                    <DataGrid FontWeight="Normal"
+                              SelectionMode="Extended"
+                              AlternationCount="2"
+                              GridLinesVisibility="All" 
+                              HorizontalGridLinesBrush="#FF080101" 
+                              VerticalGridLinesBrush="#FF0A0101" 
+                              CanUserAddRows="False"  
+                              IsReadOnly="True"
+                              BorderBrush="#FF245E97"
+                              Name="dbGrid"
+                              PreviewKeyDown="dbGrid_KeyDown"
+                              AutoGenerateColumns="False">
                     </DataGrid>
                 </Grid>
             </TabItem>
