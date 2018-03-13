@@ -62,8 +62,6 @@ J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\Ga
 J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\Game.pdb
 J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\RegistrationWindow.g.cs
 J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\RegistrationWindow.baml
-J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\MainActivityWindow.g.cs
-J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\MainActivityWindow.baml
 J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\PasswordChangeWindow.g.cs
 J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\PasswordChangeWindow.baml
 J:\Marcin\Studia, jeszcze nie done\SEM 6\Bazy Danych\Repo\Game\Game\obj\Debug\ChangeAccountPropertiesWindow.g.cs

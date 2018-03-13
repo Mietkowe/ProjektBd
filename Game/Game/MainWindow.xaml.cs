@@ -67,7 +67,7 @@ namespace Game
                     string salt = user.saltText;
                     if (HashManager.isPasswordValid(salt, user.passwordHash, writtenPassword))
                     {
-                        new MainActivityWindow(user.playerID).Show();
+                        new App_Window(user.playerID).Show();
                         this.Close();
                     }
                     else
